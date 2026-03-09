@@ -40,7 +40,6 @@ const FAMILIES: Record<Family, FamilyConfig> = {
     label: "OpenAI (GPT)",
     providerId: "xaapi-openai",
     prefixes: ["gpt-"],
-    filter: (id) => id.includes("codex"),
   },
   gemini: {
     api: "anthropic-messages",
@@ -56,6 +55,9 @@ const FAMILIES: Record<Family, FamilyConfig> = {
 /* ------------------------------------------------------------------ */
 
 const MODEL_META: Record<string, [number, number, boolean?]> = {
+  // OpenAI GPT-5.4
+  "gpt-5.4":             [1_048_576, 128_000],
+  "gpt-5.4-pro":         [1_048_576, 128_000],
   // OpenAI Codex
   "gpt-5.3-codex":       [200_000, 100_000],
   "gpt-5.2-codex":       [200_000, 100_000],
