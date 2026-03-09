@@ -1,0 +1,10 @@
+{
+  "id": "openclaw-xaapi-auth",
+  "providers": ["xaapi"],
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  },
+  "uiHints": {}
+}

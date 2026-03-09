@@ -1,0 +1,33 @@
+{
+  "name": "openclaw-xaapi-auth",
+  "version": "1.0.0",
+  "description": "OpenClaw plugin - Use GPT Codex, Claude & Gemini models via xaapi.ai",
+  "type": "module",
+  "license": "MIT",
+  "author": "sheridiany",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sheridiany/openclaw-xaapi-auth"
+  },
+  "keywords": [
+    "openclaw",
+    "openclaw-plugin",
+    "xaapi",
+    "openai",
+    "claude",
+    "gemini",
+    "gpt",
+    "codex",
+    "api-proxy"
+  ],
+  "files": [
+    "index.ts",
+    "openclaw.plugin.json",
+    "README.md"
+  ],
+  "openclaw": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}
